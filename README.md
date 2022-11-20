@@ -1,3 +1,4 @@
+```
 # Banker-Algorithm
 Simple implementation of Banker Algorithm using C
 Bank Algorithms that allows upto 10 processes and 10 types of Resources
@@ -44,4 +45,4 @@ gcc banker.c -o banker
 ./ banker
   Output:
 Safe sequence is: 1 3 0 2 4
-
+```
