@@ -105,7 +105,7 @@ void banker()
         
         for(i= 0; i < p;i++)
         {
-            printf("%d ->",sSeq[i]);
+            printf("%d ",sSeq[i]);
         }
     }
 
