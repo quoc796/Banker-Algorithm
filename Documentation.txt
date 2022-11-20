@@ -1,0 +1,23 @@
+ Documentation:
+Receiving input from file input.txt 
+Input format:
+  1: number of processes (p), number of resources types (r)
+  2: Allocation matrix of size pxr (allocation)
+  3: Max matrix of size pxr (allocation)
+  4: Available array of size r (available)
+Output:
+  If encouter deadlock: System encouter deadlock
+  else : safe sequence
+
+
+    Steps of main function: 
+        receiving input and assign input to p, r, allocation, max, available
+        enter bank algorithm
+    Bank algorithm:
+        compute need matrix and assign into needed
+        loop through processes to determine which process allocated resources can be released
+            determine by check if need < available: 
+              true: release process allocation -> retrieve allocated resources into available -> add this process to safe sequence -> go back to check unreleased process
+        check if all processes entered safe sequence:
+            true: print safe sequence
+            false: print encouter deadlock
